@@ -1,2 +1,5 @@
-// wakayama color theme for Wmap
-$menu-item-color-bg-hover: #f08300;
+// main-header
+$header-color-bg:           darken( rgb( 85, 115, 187 ), 20% );
+$header-icon-color-fg:      darken( rgb( 85, 115, 187 ), 30% );
+$main-color-border:         lighten( rgb( 85, 115, 187 ), 15% );
+$main-item-color-border:    lighten( rgb( 85, 115, 187 ), 20% );
