@@ -17,10 +17,12 @@
     }
 
     this.routeMap = function( e ) {
+      window.pageYOffsetPrev = window.pageYOffset
       route( 'map/' + e.target.dataset.lat.trim() + ',' + e.target.dataset.lng.trim() )
     }.bind( this )
 
     this.routeGallery = function( e ) {
+      window.pageYOffsetPrev = window.pageYOffset
       route( 'gallery/' + e.target.dataset.image.trim() )
     }.bind( this )
 

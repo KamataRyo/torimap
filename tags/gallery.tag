@@ -2,7 +2,6 @@
 
   <div class="back" onclick="{ click }"><i class="glyphicon glyphicon-remove"></i></div>
 
-
   <div class="image-wrap">
     <img src={ src } class="image" alt="" />
   </div>
@@ -13,6 +12,7 @@
 
     this.click = function() {
       window.history.back()
+
     }.bind( this )
 
   </script>
