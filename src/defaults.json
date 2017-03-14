@@ -1,7 +1,7 @@
 {
   "title": "琵琶湖の水鳥",
   "description": "琵琶湖周辺でよく見かける水鳥のカタログ",
-  "url": "https://torimap.biwako.io/",
+  "url": "http://torimap.biwako.io/",
   "locale": "ja",
   "theme": "torimap",
   "endpoint": "json"
