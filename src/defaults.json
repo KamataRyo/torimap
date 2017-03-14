@@ -1,7 +1,7 @@
 {
-  "title": "Wmap",
-  "description": "An open source mobile application framework which displays open data.",
-  "url": "https://wmap.wacker.io/",
+  "title": "とりまっぷ",
+  "description": "琵琶湖で見かけた野鳥のカタログです",
+  "url": "https://torimap.biwako.io/",
   "locale": "ja",
   "endpoint": "json"
 }
