@@ -34,6 +34,16 @@
       {
         display: none;
       }
+
+      .thumbnail-wrap
+      {
+        text-align: center;
+        .thumbnail
+        {
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
     }
 
     .item.active .item-contents
@@ -75,7 +85,8 @@
     }
   }
 
-  .map
+  .map,
+  .gallery
   {
     width: 100%;
 
@@ -96,6 +107,16 @@
       background-color: $map-icon-color-bg;
       box-shadow: 0 0 5px 0 $map-icon-color-shadow;
       z-index: 9999;
+    }
+  }
+
+  .gallery
+  {
+    .image-wrap
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
