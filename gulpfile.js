@@ -19,6 +19,9 @@ const sharp       = require( './lib/gulp-wsharp.js' )
 
 const config = require( './src/defaults.json' )
 
+// theme slug fallback
+config.theme = ( config.theme && config.theme !== '' ) ? config.theme : 'default'
+
 gulp.task( 'md', () => {
   gulp.src( 'README.md' )
     .pipe( marked( {} ) )
@@ -103,7 +106,9 @@ gulp.task( 'fonts', () => {
 } )
 
 gulp.task( 'sass', () => {
-  return gulp.src( './src/style.scss' )
+  return gulp.src( './src/style.scss.ejs' )
+    .pipe( rename( './style.scss' ) )
+    .pipe( ejs( config ) )
     .pipe( sass().on( 'error', sass.logError ) )
     .pipe( gulp.dest( './css' ) )
 } )

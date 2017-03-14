@@ -1,7 +1,7 @@
 {
   "name": "torimap",
   "version": "1.0.0",
-  "description": "Riot based SPA project template",
+  "description": "琵琶湖で見つけた野鳥カタログです",
   "main": "index.html",
   "scripts": {
     "start": "http-server -io",

@@ -3,5 +3,6 @@
   "description": "琵琶湖で見かけた野鳥のカタログです",
   "url": "https://torimap.biwako.io/",
   "locale": "ja",
+  "theme": "torimap",
   "endpoint": "json"
 }
