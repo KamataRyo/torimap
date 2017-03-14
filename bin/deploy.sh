@@ -38,6 +38,7 @@ git add css
 git add fonts
 git add images
 git add img
+git add thumbnails
 git add index.html
 git add js
 git add json
