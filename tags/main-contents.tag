@@ -6,8 +6,18 @@
         <h2 class="item-title">{ title }</h2>
         <div class="item-toggle" show={ lat && lng }><i class="show-map glyphicon glyphicon-map-marker" onclick={ parent.routeMap } data-lat="{ lat }" data-lng={ lng }></i></div>
       </header>
-      <div class="thumbnail-wrap" if={ image && image !== '' }><img class="show-gallery thumbnail" src={ './thumbnails/' + image } onclick={ parent.routeGallery } data-image={ image }></div>
+      <div class="thumbnail-wrap" if={ image && image != '' }><img class="show-gallery thumbnail" src={ './thumbnails/' + image } onclick={ parent.routeGallery } data-image={ image }></div>
       <p class="item-description">{ content }</p>
+      <table show={ type || tl }>
+        <tr show={ type }>
+          <th>渡り性</th>
+          <td>{ type }</td>
+        </tr>
+        <tr show={ tl }>
+          <th>全長</th>
+          <td>{ tl }</td>
+        </tr>
+      </table>
     </div>
   </section>
 
