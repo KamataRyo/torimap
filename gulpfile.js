@@ -77,7 +77,7 @@ gulp.task( 'data', [ 'clean' ], () => {
 } )
 
 gulp.task( 'image', () => {
-  gulp.src( './images/**/*.jpg' )
+  gulp.src( './images/**/*.JPG' )
     .pipe( sharp( 320 ) )
     .pipe( gulp.dest( './thumbnails' ) )
 } )
